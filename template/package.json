@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "description": "基于React的基础组件",
     "types": "es/index.d.ts",
-    "main": "dist/index.js",
+    "main": "es/index.js",
     "module": "es/index.js",
     "publisher": "XueYou",
     "license": "MIT",
@@ -34,7 +34,8 @@
         "@types/node": "11.9.4",
         "@types/react": "16.8.4",
         "@types/react-dom": "16.8.2",
-        "xylib-scripts": "^1.0.0"
+        "xylib-scripts": "^1.0.0",
+        "react-testing-library": "^6.0.0"
     },
     "dependencies": {
         "react": "^16.8.2",

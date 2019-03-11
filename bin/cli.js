@@ -1,8 +1,11 @@
 #!/usr/bin/env node
 const commander = require("commander");
 const chalk = require("chalk").default;
-const init = require("../scripts/init");
 const package = require("../package.json");
+const PATHS = require("../config/path");
+const init = require("../scripts/init");
+const build = require("../scripts/build");
+const test = require("../scripts/test");
 
 const program = new commander.Command(package.name).version(package.version).usage(`${chalk.cyan("快速生成项目工具")}`);
 
@@ -15,14 +18,10 @@ program
     .action(init);
 
 // build
-program.command("build").action((cmd) => {
-    console.log(`TODO: 编译`);
-});
+program.command("build").action(build);
 
 // test
-program.command("test").action((cmd) => {
-    console.log(`TODO: 测试`);
-});
+program.command("test").action(test);
 
 // start
 program.command("start").action((cmd) => {

@@ -6,22 +6,7 @@ const spawn = require("cross-spawn");
 const PATHS = require("../config/path");
 const ora = require("ora");
 const envinfo = require("envinfo");
-
-function spawnAsync(command, args, options) {
-    return new Promise((resolve, reject) => {
-        const child = spawn(command, args, options);
-        child.on("close", (code) => {
-            if (code !== 0) {
-                reject(new Error(chalk.redBright(`install fail`)));
-            } else {
-                resolve();
-            }
-        });
-        child.on("error", (err) => {
-            reject(err);
-        });
-    });
-}
+const spawnAsync = require("./tools/spawn");
 
 function converHump(str) {
     const _ = str.replace(/\-[a-z]/g, (a, b) => {
@@ -152,7 +137,8 @@ class AppInitialize {
 
     async install() {
         const { appPath, cmd } = this;
-        const spinner = ora(chalk.white("Installing packages. This might take a couple of minutes.")).start();
+        // const spinner = ora(chalk.white("Installing packages. This might take a couple of minutes.")).start();
+        console.log(chalk.white("Installing packages. This might take a couple of minutes."));
         let command,
             args = ["install", "--registry", cmd.registry];
 
@@ -165,11 +151,13 @@ class AppInitialize {
 
         try {
             // ignore, inherit
-            await spawnAsync(command, args, { stdio: "ignore", cwd: appPath.directory });
-            spinner.succeed("Install Succeed");
+            await spawnAsync(command, args, { stdio: "inherit", cwd: appPath.directory });
+            // spinner.succeed("Install Succeed");
+            console.log(chalk.green("√ Install Succeed"));
             this.tryGitInit();
         } catch (error) {
-            spinner.fail(error.message);
+            // spinner.fail(error.message);
+            console.error(error.message);
             process.exit(1);
         }
     }
