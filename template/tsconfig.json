@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "es",
+        "target": "esnext",
+        "module": "esnext",
+        "declaration": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "jsx": "react",
+        "strict": false,
+        "lib": ["dom", "esnext"],
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true
+    },
+    "include": ["src"]
+}

@@ -1,0 +1,40 @@
+{
+    "name": "xylib-scripts",
+    "version": "1.0.0",
+    "description": "快速创建React组件模板",
+    "main": "bin/cli.js",
+    "license": "MIT",
+    "types": "./lib/react-app.d.ts",
+    "files": [
+        "bin",
+        "config",
+        "lib",
+        "scripts",
+        "template"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xueyou2000/xylib-scripts.git"
+    },
+    "publishConfig": {
+        "registry": "http://192.168.1.22:8081/repository/npm-my/"
+    },
+    "author": {
+        "name": "XueYou",
+        "email": "xueyoucd@gmail.com"
+    },
+    "dependencies": {
+        "@types/jest": "^24.0.11",
+        "@types/node": "^11.11.0",
+        "@types/react": "^16.8.7",
+        "@types/react-dom": "^16.8.2",
+        "chalk": "^2.4.2",
+        "commander": "^2.19.0",
+        "cross-spawn": "^6.0.5",
+        "envinfo": "^7.1.0",
+        "fs-extra": "^7.0.1",
+        "ora": "^3.2.0",
+        "semver": "^5.6.0",
+        "validate-npm-package-name": "^3.0.0"
+    }
+}

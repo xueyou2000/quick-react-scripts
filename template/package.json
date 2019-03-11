@@ -1,0 +1,43 @@
+{
+    "name": "xylib",
+    "version": "0.0.1",
+    "description": "基于React的基础组件",
+    "types": "es/index.d.ts",
+    "main": "dist/index.js",
+    "module": "es/index.js",
+    "publisher": "XueYou",
+    "license": "MIT",
+    "files": [
+        "es",
+        "dist",
+        "assets/*.css"
+    ],
+    "scripts": {
+        "test": "xylib-scripts test",
+        "build": "xylib-scripts build",
+        "start": "xylib-scripts start",
+        "_publish": "yarn run test && yarn run build && npm publish"
+    },
+    "keywords": [
+        "react",
+        "react-component"
+    ],
+    "author": {
+        "name": "XueYou",
+        "email": "xueyoucd@gmail.com"
+    },
+    "publishConfig": {
+        "registry": "http://192.168.1.22:8081/repository/npm-my/"
+    },
+    "devDependencies": {
+        "@types/jest": "24.0.6",
+        "@types/node": "11.9.4",
+        "@types/react": "16.8.4",
+        "@types/react-dom": "16.8.2",
+        "xylib-scripts": "^1.0.0"
+    },
+    "dependencies": {
+        "react": "^16.8.2",
+        "react-dom": "^16.8.2"
+    }
+}
