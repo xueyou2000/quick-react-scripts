@@ -24,9 +24,9 @@ program.command("build").action(build);
 program.command("test").action(test);
 
 // start
-program.command("start").action((cmd) => {
-    console.log(`TODO: 开发`);
-});
+// program.command("start").action((cmd) => {
+//     console.log(`TODO: 开发`);
+// });
 
 // run
 program.parse(process.argv);
