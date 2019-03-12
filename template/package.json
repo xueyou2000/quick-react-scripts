@@ -15,7 +15,7 @@
     "scripts": {
         "test": "xylib-scripts test",
         "build": "xylib-scripts build",
-        "start": "xylib-scripts start",
+        "start": "start-storybook -p 6006",
         "_publish": "yarn run test && yarn run build && npm publish"
     },
     "keywords": [
@@ -34,8 +34,19 @@
         "@types/node": "11.9.4",
         "@types/react": "16.8.4",
         "@types/react-dom": "16.8.2",
-        "xylib-scripts": "^1.0.0",
-        "react-testing-library": "^6.0.0"
+        "@storybook/cli": "^5.0.1",
+        "@storybook/react": "^5.0.1",
+        "@storybook/addon-info": "^5.0.1",
+        "@storybook/addon-actions": "^5.0.1",
+        "babel-loader": "^8.0.5",
+        "hard-source-webpack-plugin": "^0.13.1",
+        "awesome-typescript-loader": "^5.2.1",
+        "react-docgen-typescript-loader": "^3.0.1",
+        "react-docgen-typescript-webpack-plugin": "^1.1.0",
+        "highlight.js": "^9.15.6",
+        "react-markdown": "^4.0.6",
+        "react-testing-library": "^6.0.0",
+        "xylib-scripts": "^1.0.0"
     },
     "dependencies": {
         "react": "^16.8.2",

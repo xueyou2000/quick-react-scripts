@@ -16,7 +16,18 @@
             "@/*": ["src/*"]
         },
         "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "rootDirs": ["src", ".storybook", "examples"],
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
     },
-    "include": ["src"]
+    "include": ["src"],
+    "exclude": ["node_modules", ".awcache"]
 }
