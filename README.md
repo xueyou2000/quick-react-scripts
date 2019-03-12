@@ -22,6 +22,7 @@
     -   🛠[Init](#Init)
     -   🔧[Build](#Build)
     -   🧪[Test](#Test)
+-   🏰[Case](#Case)
 
 ## Getting Started
 
@@ -151,6 +152,13 @@ yarn test
     }
 }
 ```
+
+## Case
+
+使用`quick-react-scripts`的案例:
+
+-   [xy-checkbox](https://github.com/xueyou2000/xy-checkbox) 基础`Checkbox`组件, 类似原生
+-   [xy-image](https://github.com/xueyou2000/xy-image) `Image`组件, 提供了图片占位符, 媒体查询切换图片等功能
 
 ## License
 
