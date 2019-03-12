@@ -107,7 +107,7 @@ class AppInitialize {
 
     updatePackageFile() {
         const { appPath, appName } = this;
-        const packagePath = appPath.file("package.json");
+        const packagePath = appPath.file("temp_package.json");
         const packageJson = fs.readJSONSync(packagePath);
         packageJson.name = appName;
         packageJson.keywords.push(appName);
@@ -116,6 +116,7 @@ class AppInitialize {
             url: `git+https://github.com/xueyou2000/${appName}.git`
         };
         fs.writeFileSync(packagePath, JSON.stringify(packageJson, null, 4));
+        fs.renameSync(packagePath, appPath.file("package.json"));
     }
 
     updateReadmeFile() {
