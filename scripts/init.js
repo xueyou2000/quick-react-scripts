@@ -140,7 +140,12 @@ class AppInitialize {
         // const spinner = ora(chalk.white("Installing packages. This might take a couple of minutes.")).start();
         console.log(chalk.white("Installing packages. This might take a couple of minutes."));
         let command,
-            args = ["install", "--registry", cmd.registry];
+            args = ["install"];
+
+        if (cmd.registry) {
+            args.push("--registr");
+            args.push(cmd.registry);
+        }
 
         try {
             await envinfo.helpers.getYarnInfo();

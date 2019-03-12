@@ -1,12 +1,6 @@
-const fs = require("fs-extra");
 const path = require("path");
-const spawn = require("cross-spawn");
 const PATHS = require("../config/path");
-const chalk = require("chalk").default;
-const ora = require("ora");
-const spawnAsync = require("./tools/spawn");
 const jest = require("jest");
-const babelJest = require("babel-jest");
 
 module.exports = async (cmd) => {
     let argv = process.argv.slice(2);
@@ -14,6 +8,7 @@ module.exports = async (cmd) => {
         rootDir: PATHS.currentDirectory,
         setupFilesAfterEnv: [require.resolve("react-testing-library/cleanup-after-each")],
         preset: "ts-jest",
+        testMatch: ["<rootDir>/tests/**/*.(spec|test).ts?(x)"],
         transform: {
             "^.+\\.js$": require.resolve("../config/jest/babelTransform"),
             "^.+\\.(ts|tsx)$": require.resolve("ts-jest")

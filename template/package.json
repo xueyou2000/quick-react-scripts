@@ -13,8 +13,8 @@
         "assets/*.css"
     ],
     "scripts": {
-        "test": "xylib-scripts test",
-        "build": "xylib-scripts build",
+        "test": "quick-react-scripts test",
+        "build": "quick-react-scripts build",
         "start": "start-storybook -p 6006",
         "_publish": "yarn run test && yarn run build && npm publish"
     },
@@ -25,9 +25,6 @@
     "author": {
         "name": "XueYou",
         "email": "xueyoucd@gmail.com"
-    },
-    "publishConfig": {
-        "registry": "http://192.168.1.22:8081/repository/npm-my/"
     },
     "devDependencies": {
         "@types/jest": "24.0.6",
@@ -47,7 +44,7 @@
         "highlight.js": "^9.15.6",
         "react-markdown": "^4.0.6",
         "react-testing-library": "^6.0.0",
-        "xylib-scripts": "^1.0.0"
+        "quick-react-scripts": "^1.0.0"
     },
     "dependencies": {
         "react": "^16.8.2",

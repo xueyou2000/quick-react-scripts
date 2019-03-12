@@ -14,7 +14,7 @@ program
     .command("init <project-directory>")
     .description(chalk.cyan("初始化项目"))
     .usage(`${chalk.green("<project-directory>")} [options]`)
-    .option("-r, --registry", "使用镜像", "http://192.168.1.22:8081/repository/npm-group/")
+    .option("--registry", "使用镜像")
     .action(init);
 
 // build

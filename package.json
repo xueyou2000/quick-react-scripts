@@ -1,12 +1,12 @@
 {
-    "name": "xylib-scripts",
+    "name": "quick-react-scripts",
     "version": "1.0.0",
-    "description": "快速创建React组件模板",
+    "description": "用于快速创建React组件项目",
     "main": "bin/cli.js",
     "license": "MIT",
     "types": "./lib/react-app.d.ts",
     "bin": {
-        "xylib-scripts": "./bin/cli.js"
+        "quick-react-scripts": "./bin/cli.js"
     },
     "files": [
         "bin",
@@ -17,10 +17,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/xueyou2000/xylib-scripts.git"
-    },
-    "publishConfig": {
-        "registry": "http://192.168.1.22:8081/repository/npm-my/"
+        "url": "git+https://github.com/xueyou2000/quick-react-scripts.git"
     },
     "author": {
         "name": "XueYou",
