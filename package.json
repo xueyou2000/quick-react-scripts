@@ -1,6 +1,6 @@
 {
     "name": "quick-react-scripts",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "用于快速创建React组件项目",
     "main": "bin/cli.js",
     "license": "MIT",
@@ -13,7 +13,7 @@
         "config",
         "lib",
         "scripts",
-        "template"
+        "template/**/*"
     ],
     "repository": {
         "type": "git",
