@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import Markdown from "react-markdown";
 import hljs from "highlight.js";
-import "highlight.js/styles/github.css";
+import "highlight.js/styles/atom-one-dark-reasonable.css";
 
 function MyMarkdown({ source }: { source: string }) {
     useEffect(() => {

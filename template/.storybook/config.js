@@ -3,23 +3,27 @@ import { addParameters, configure, storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import readme from "../README.md";
 import Markdown from "./component/MyMarkdown";
+import Component from "../src";
 import "./index.css";
 
 function createExamplesStories() {
     const exampleStories = storiesOf("Examples", module);
-    exampleStories.addDecorator(withInfo);
-    exampleStories.addParameters({ info: { inline: true, source: true } });
-
     const req = require.context("../examples", true, /.tsx$/);
     req.keys().forEach((filename) => {
-        const renderExample = req(filename).default;
+        const Example = req(filename).default;
         const name = filename.replace(".tsx", "").replace("./", "");
-        exampleStories.add(name, renderExample);
+        exampleStories.add(name, () => <Example />);
     });
 }
 
 function loadStories() {
-    storiesOf("ReadMe", module).add("ReadMe", () => <Markdown source={readme} />);
+    storiesOf("Introduction", module).add("ReadMe", () => <Markdown source={readme} />);
+
+    storiesOf("Api", module)
+        .addDecorator(withInfo)
+        .addParameters({ info: { inline: true, source: false } })
+        .add("Props", () => <Component />);
+
     createExamplesStories();
 }
 

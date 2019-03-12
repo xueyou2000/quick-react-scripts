@@ -39,6 +39,7 @@
         "@storybook/addon-info": "^5.0.1",
         "@storybook/addon-actions": "^5.0.1",
         "babel-loader": "^8.0.5",
+        "sass-loader": "^7.1.0",
         "hard-source-webpack-plugin": "^0.13.1",
         "awesome-typescript-loader": "^5.2.1",
         "react-docgen-typescript-loader": "^3.0.1",

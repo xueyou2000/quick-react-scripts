@@ -1,4 +1,4 @@
-# xylib-{placeholder}
+# {placeholder}
 
 ---
 
@@ -8,10 +8,10 @@
 
 ```sh
 # npm
-npm install --save xylib-{placeholder}
+npm install --save {placeholder}
 
 # yarn
-yarn add xylib-{placeholder}
+yarn add {placeholder}
 ```
 
 ## 使用
@@ -19,7 +19,7 @@ yarn add xylib-{placeholder}
 ```ts
 import React from "react";
 import ReactDOM from "react-dom";
-import {ComponentName} from "xylib-{placeholder}";
+import {ComponentName} from "{placeholder}";
 ReactDOM.render(<{ComponentName} />, container);
 ```
 
