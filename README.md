@@ -114,8 +114,7 @@ import "./index.scss";
 
 ```json
 {
-    ...,
-    rollup: {
+    "rollup": {
         "file": "assets/_.js",
         "format": "es"
     }
@@ -146,12 +145,9 @@ yarn test
 
 ```json
 {
-    ...,
-    jest: {
-        testMatch: ["<rootDir>/tests/**/*.(spec|test).ts?(x)"],
-        "transformIgnorePatterns": [
-            "<rootDir>/node_modules/(?!(utils-hooks/es))"
-        ]
+    "jest": {
+        "testMatch": ["<rootDir>/tests/**/*.(spec|test).ts?(x)"],
+        "transformIgnorePatterns": ["<rootDir>/node_modules/(?!(utils-hooks/es))"]
     }
 }
 ```
