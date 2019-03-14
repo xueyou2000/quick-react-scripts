@@ -7,21 +7,15 @@
     "module": "es/index.js",
     "publisher": "XueYou",
     "license": "MIT",
-    "files": [
-        "es",
-        "dist",
-        "assets/*.css"
-    ],
+    "files": ["es", "dist", "assets/*.css"],
     "scripts": {
         "test": "quick-react-scripts test",
         "build": "quick-react-scripts build",
         "start": "start-storybook -p 6006",
+        "build:storybook": "build-storybook",
         "_publish": "yarn run test && yarn run build && npm publish"
     },
-    "keywords": [
-        "react",
-        "react-component"
-    ],
+    "keywords": ["react", "react-component"],
     "author": {
         "name": "XueYou",
         "email": "xueyoucd@gmail.com"
