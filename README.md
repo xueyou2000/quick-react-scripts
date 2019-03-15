@@ -2,7 +2,20 @@
 
 ---
 
+[![NPM version][npm-image]][npm-url]
+[![node version][node-image]][node-url]
+[![npm download][download-image]][download-url]
+
+[npm-image]: http://img.shields.io/npm/v/quick-react-scripts.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/quick-react-scripts
+[node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
+[node-url]: http://nodejs.org/download/
+[download-image]: https://img.shields.io/npm/dm/quick-react-scripts.svg?style=flat-square
+[download-url]: https://npmjs.org/package/quick-react-scripts
+
 ## Intro
+
+[![quick-react-scripts](https://nodei.co/npm/quick-react-scripts.png)](https://npmjs.org/package/quick-react-scripts)
 
 `quick-react-scripts`用于快速创建`React`组件项目.
 
@@ -157,7 +170,7 @@ yarn test
 
 使用`quick-react-scripts`的案例:
 
--   [xy-checkbox](https://github.com/xueyou2000/xy-checkbox) 基础`Checkbox`组件, 类似原生
+-   [quick-react-scripts](https://github.com/xueyou2000/quick-react-scripts) 基础`Checkbox`组件, 类似原生
 -   [xy-image](https://github.com/xueyou2000/xy-image) `Image`组件, 提供了图片占位符, 媒体查询切换图片等功能
 
 ## License
