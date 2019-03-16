@@ -19,6 +19,9 @@
         "type": "git",
         "url": "git+https://github.com/xueyou2000/quick-react-scripts.git"
     },
+    "publishConfig": {
+        "registry": "http://registry.npmjs.org/"
+    },
     "author": {
         "name": "XueYou",
         "email": "xueyoucd@gmail.com"
