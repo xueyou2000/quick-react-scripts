@@ -18,7 +18,6 @@
         },
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
-        "rootDirs": ["src", ".storybook", "examples"],
         "forceConsistentCasingInFileNames": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true
