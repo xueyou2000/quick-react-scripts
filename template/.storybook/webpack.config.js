@@ -1,33 +1,35 @@
 const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 
-module.exports = {
-    resolve: {
-        extensions: [".ts", ".tsx", ".js", ".jsx", ".json"]
-    },
-    module: {
-        rules: [
+module.exports = ({ config, mode }) => {
+    config.module.rules.push({
+        test: /\.tsx?$/,
+        include: [/src/, /examples/, /.storybook/],
+        use: [
             {
-                test: /\.tsx?$/,
-                include: [/src/, /examples/, /.storybook/],
-                use: [
-                    {
-                        loader: "awesome-typescript-loader",
-                        options: {
-                            useCache: true,
-                            reportFiles: ["src/**/*.{ts,tsx}", "examples/**/*.{ts,tsx}", ".storybook/**/*.{ts,tsx}"]
-                        }
-                    },
-                    {
-                        loader: "react-docgen-typescript-loader"
-                    }
-                ]
+                loader: "awesome-typescript-loader",
+                options: {
+                    useCache: true,
+                    reportFiles: ["src/**/*.{ts,tsx}", "examples/**/*.{ts,tsx}", ".storybook/**/*.{ts,tsx}"]
+                }
             },
             {
-                test: /\.scss$/,
-                loaders: ["style-loader", "css-loader", "sass-loader"],
-                include: [/src/, /examples/, /.storybook/]
+                loader: "react-docgen-typescript-loader"
             }
         ]
-    },
-    plugins: [new HardSourceWebpackPlugin()]
+    });
+
+    config.module.rules.push({
+        test: /\.scss$/,
+        loaders: ["style-loader", "css-loader", "sass-loader"],
+        include: [/src/, /examples/, /.storybook/]
+    });
+
+    config.plugins.push(new HardSourceWebpackPlugin());
+
+    return {
+        ...config,
+        resolve: {
+            extensions: [".ts", ".tsx", ".js", ".jsx", ".json"]
+        }
+    };
 };
