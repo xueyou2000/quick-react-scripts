@@ -172,6 +172,14 @@ yarn test
 
 -   [quick-react-scripts](https://github.com/xueyou2000/quick-react-scripts) 基础`Checkbox`组件, 类似原生
 -   [xy-image](https://github.com/xueyou2000/xy-image) `Image`组件, 提供了图片占位符, 媒体查询切换图片等功能
+-   [xy-affix](https://github.com/xueyou2000/xy-affix) 图钉组件, 将元素固定在屏幕视窗内
+-   [xy-checkbox](https://github.com/xueyou2000/xy-checkbox) 复选框, 单选框组件
+-   [xy-drawer](https://github.com/xueyou2000/xy-drawer) 抽屉组件
+-   [xy-grid](https://github.com/xueyou2000/xy-grid) 栅格组件,与 antd 一摸一样
+-   [xy-notification](https://github.com/xueyou2000/xy-notification) 通知组件, 右上角弹出通知
+-   [xy-skeleton](https://github.com/xueyou2000/xy-skeleton) 骨架屏组件
+-   [xy-tabs](https://github.com/xueyou2000/xy-tabs) tabs 组件
+-   [xy-tooltip](https://github.com/xueyou2000/xy-tooltip) tooltip 提示组件
 
 ## License
 

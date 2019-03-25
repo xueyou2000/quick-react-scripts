@@ -9,6 +9,9 @@ module.exports = async (cmd) => {
         setupFilesAfterEnv: [require.resolve("react-testing-library/cleanup-after-each")],
         preset: "ts-jest",
         testMatch: ["<rootDir>/tests/**/*.(spec|test).ts?(x)"],
+        moduleNameMapper: {
+            "\\.(css|scss)$": require.resolve("identity-obj-proxy")
+        },
         transform: {
             "^.+\\.js$": require.resolve("../config/jest/babelTransform"),
             "^.+\\.(ts|tsx)$": require.resolve("ts-jest")
