@@ -10,7 +10,8 @@ module.exports = async (cmd) => {
         preset: "ts-jest",
         testMatch: ["<rootDir>/tests/**/*.(spec|test).ts?(x)"],
         moduleNameMapper: {
-            "\\.(css|scss)$": require.resolve("identity-obj-proxy")
+            "\\.(css|scss)$": require.resolve("identity-obj-proxy"),
+            "^.+\\.svg$": require.resolve("jest-svg-transformer")
         },
         transform: {
             "^.+\\.js$": require.resolve("../config/jest/babelTransform"),

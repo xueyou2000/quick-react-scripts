@@ -2785,6 +2785,11 @@ jest-snapshot@^24.3.1:
     pretty-format "^24.3.1"
     semver "^5.5.0"
 
+jest-svg-transformer@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/jest-svg-transformer/download/jest-svg-transformer-1.0.0.tgz#e38884ca4cd8b2295cdfa2a0b24667920c3a8a6d"
+  integrity sha1-44iEykzYsilc36KgskZnkgw6im0=
+
 jest-util@^24.3.0:
   version "24.3.0"
   resolved "http://registry.npm.taobao.org/jest-util/download/jest-util-24.3.0.tgz#a549ae9910fedbd4c5912b204bb1bcc122ea0057"

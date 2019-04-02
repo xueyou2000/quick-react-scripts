@@ -4,7 +4,7 @@ import Hello from "../src";
 export default function() {
     return (
         <div>
-            <p>简单演示</p>
+            <h1>简单演示</h1>
             <Hello className="my-hello" />
         </div>
     );

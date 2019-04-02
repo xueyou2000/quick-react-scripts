@@ -1,6 +1,6 @@
 {
     "name": "quick-react-scripts",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "用于快速创建React组件项目",
     "main": "bin/cli.js",
     "license": "MIT",
@@ -42,6 +42,7 @@
         "fs-extra": "^7.0.1",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^24.3.1",
+        "jest-svg-transformer": "^1.0.0",
         "ora": "^3.2.0",
         "react-testing-library": "^6.0.0",
         "rollup": "^1.6.0",
