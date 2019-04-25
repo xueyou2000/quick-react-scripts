@@ -170,14 +170,22 @@ yarn test
 
 使用`quick-react-scripts`的案例:
 
--   [quick-react-scripts](https://github.com/xueyou2000/quick-react-scripts) 基础`Checkbox`组件, 类似原生
--   [xy-image](https://github.com/xueyou2000/xy-image) `Image`组件, 提供了图片占位符, 媒体查询切换图片等功能
 -   [xy-affix](https://github.com/xueyou2000/xy-affix) 图钉组件, 将元素固定在屏幕视窗内
+-   [xy-autocomplete](https://github.com/xueyou2000/xy-autocomplete) 联想输入组件
+-   [xy-button](https://github.com/xueyou2000/xy-button) 按钮组件
 -   [xy-checkbox](https://github.com/xueyou2000/xy-checkbox) 复选框, 单选框组件
 -   [xy-drawer](https://github.com/xueyou2000/xy-drawer) 抽屉组件
+-   [xy-empty](https://github.com/xueyou2000/xy-empty) 空状态组件
+-   [xy-form](https://github.com/xueyou2000/xy-form) 表单组件
 -   [xy-grid](https://github.com/xueyou2000/xy-grid) 栅格组件,与 antd 一摸一样
+-   [xy-image](https://github.com/xueyou2000/xy-image) `Image`组件, 提供了图片占位符, 媒体查询切换图片等功能
+-   [xy-input](https://github.com/xueyou2000/xy-input) 输入框组件
+-   [xy-input-number](https://github.com/xueyou2000/xy-input-number) 数值输入框组件
+-   [xy-messagebox](https://github.com/xueyou2000/xy-messagebox) 消息弹框组件
 -   [xy-notification](https://github.com/xueyou2000/xy-notification) 通知组件, 右上角弹出通知
+-   [xy-select](https://github.com/xueyou2000/xy-select) 下拉列表组件
 -   [xy-skeleton](https://github.com/xueyou2000/xy-skeleton) 骨架屏组件
+-   [xy-switch](https://github.com/xueyou2000/xy-switch) 开关组件
 -   [xy-tabs](https://github.com/xueyou2000/xy-tabs) tabs 组件
 -   [xy-tooltip](https://github.com/xueyou2000/xy-tooltip) tooltip 提示组件
 
