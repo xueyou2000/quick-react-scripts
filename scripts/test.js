@@ -21,6 +21,9 @@ module.exports = async (cmd) => {
     const overrides = Object.assign({}, jestConfig, require(path.resolve(PATHS.currentDirectory, "package.json")).jest);
 
     argv.push("--config", JSON.stringify(overrides));
+    if (cmd.test) {
+        argv.push("-t", cmd.test);
+    }
 
     jest.run(argv);
 };

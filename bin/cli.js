@@ -21,7 +21,10 @@ program
 program.command("build").action(build);
 
 // test
-program.command("test").action(test);
+program
+    .command("test")
+    .option("-t, --test [value]", "指定匹配的describe 或 test的名称")
+    .action(test);
 
 // run
 program.parse(process.argv);

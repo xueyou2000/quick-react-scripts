@@ -1,6 +1,6 @@
-# {placeholder}
-
----
+| ![IE](https://github.com/alrra/browser-logos/blob/master/src/edge/edge_48x48.png?raw=true) | ![Chrome](https://github.com/alrra/browser-logos/blob/master/src/chrome/chrome_48x48.png?raw=true) | ![Firefox](https://github.com/alrra/browser-logos/blob/master/src/firefox/firefox_48x48.png?raw=true) | ![Opera](https://github.com/alrra/browser-logos/blob/master/src/opera/opera_48x48.png?raw=true) | ![Safari](https://github.com/alrra/browser-logos/blob/master/src/safari/safari_48x48.png?raw=true) |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| IE 10+ ✔                                                                                   | Chrome 31.0+ ✔                                                                                     | Firefox 31.0+ ✔                                                                                       | Opera 30.0+ ✔                                                                                   | Safari 7.0+ ✔                                                                                      |
 
 [![NPM version][npm-image]][npm-url]
 [![node version][node-image]][node-url]
@@ -13,25 +13,20 @@
 [download-image]: https://img.shields.io/npm/dm/{placeholder}.svg?style=flat-square
 [download-url]: https://npmjs.org/package/{placeholder}
 
-> 基于`React Hooks` + `typescript`的基础组件
+[![{placeholder}](https://nodei.co/npm/{placeholder}.png)](https://npmjs.org/package/{placeholder})
+
+# {placeholder}
+
+基于`React Hooks` + `typescript`的基础组件
 
 ## 安装
 
-[![{placeholder}](https://nodei.co/npm/{placeholder}.png)](https://npmjs.org/package/{placeholder})
-
-| ![IE](https://github.com/alrra/browser-logos/blob/master/src/edge/edge_48x48.png?raw=true) | ![Chrome](https://github.com/alrra/browser-logos/blob/master/src/chrome/chrome_48x48.png?raw=true) | ![Firefox](https://github.com/alrra/browser-logos/blob/master/src/firefox/firefox_48x48.png?raw=true) | ![Opera](https://github.com/alrra/browser-logos/blob/master/src/opera/opera_48x48.png?raw=true) | ![Safari](https://github.com/alrra/browser-logos/blob/master/src/safari/safari_48x48.png?raw=true) |
-| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| IE 10+ ✔                                                                                   | Chrome 31.0+ ✔                                                                                     | Firefox 31.0+ ✔                                                                                       | Opera 30.0+ ✔                                                                                   | Safari 7.0+ ✔                                                                                      |
-
-```sh
-# npm
-npm install --save {placeholder}
-
+```bash
 # yarn
 yarn add {placeholder}
 ```
 
-## 使用
+## 使用例子
 
 ```ts
 import React from "react";
@@ -39,6 +34,20 @@ import ReactDOM from "react-dom";
 import {ComponentName} from "{placeholder}";
 ReactDOM.render(<{ComponentName} />, container);
 ```
+
+## API
+
+| 属性     | 说明                                                               | 类型           | 默认值    |
+| -------- | ------------------------------------------------------------------ | -------------- | --------- |
+| ghost    | 幽灵属性，使按钮背景透明                                           | boolean        | false     |
+| long     | 是否长按钮                                                         | boolean        | false     |
+| icon     | 设置按钮的图标类型                                                 | IconDefinition | -         |
+| loading  | 设置按钮载入状态                                                   | boolean        | `false`   |
+| disabled | 按钮失效状态                                                       | boolean        | `false`   |
+| shape    | 设置按钮形状，可选值为 `circle` 或者不设                           | string         | -         |
+| size     | 设置按钮大小，可选值为 `small` `large` 或者不设                    | string         | `default` |
+| type     | 设置按钮类型，可选值为 `primary` `dashed` `text` `danger` 或者不设 | string         | -         |
+| onClick  | `click` 事件的 handler                                             | function       | -         |
 
 ## 开发
 

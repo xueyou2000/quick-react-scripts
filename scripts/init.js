@@ -117,6 +117,13 @@ class AppInitialize {
         };
         fs.writeFileSync(packagePath, JSON.stringify(packageJson, null, 4));
         fs.renameSync(packagePath, appPath.file("package.json"));
+
+        const tsConfig = appPath.file("tsconfig.json");
+        const tsConfigJson = fs.readJSONSync(tsConfig);
+        tsConfigJson.paths = {
+            [appName]: ["src/index.tsx"],
+            [`${appName}/*`]: ["src/*"]
+        };
     }
 
     updateReadmeFile() {
