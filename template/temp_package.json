@@ -30,8 +30,8 @@
         "@types/react": "16.8.2",
         "@types/react-dom": "16.8.2",
         "react-testing-library": "^6.0.0",
-        "quick-react-scripts": "^1.1.5",
-        "xy-manual-tools": "0.1.0"
+        "quick-react-scripts": "^1.1.6",
+        "xy-manual-tools": "0.1.2"
     },
     "dependencies": {
         "react": "^16.8.2",
