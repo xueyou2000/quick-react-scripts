@@ -7,6 +7,7 @@ const PATHS = require("../config/path");
 const ora = require("ora");
 const envinfo = require("envinfo");
 const spawnAsync = require("./tools/spawn");
+const package = require("../package.json");
 
 function converHump(str) {
     const _ = str.replace(/\-[a-z]/g, (a, b) => {
@@ -115,6 +116,7 @@ class AppInitialize {
             type: "git",
             url: `git+https://github.com/xueyou2000/${appName}.git`
         };
+        packageJson.devDependencies['quick-react-scripts'] = package.version;
         fs.writeFileSync(packagePath, JSON.stringify(packageJson, null, 4));
         fs.renameSync(packagePath, appPath.file("package.json"));
 
