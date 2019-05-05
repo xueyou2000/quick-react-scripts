@@ -3,6 +3,7 @@ const PATHS = require("../config/path");
 const jest = require("jest");
 
 module.exports = async (cmd) => {
+    const args = process.argv.slice(3);
     let argv = process.argv.slice(2);
     const jestConfig = {
         rootDir: PATHS.currentDirectory,
@@ -21,9 +22,7 @@ module.exports = async (cmd) => {
     const overrides = Object.assign({}, jestConfig, require(path.resolve(PATHS.currentDirectory, "package.json")).jest);
 
     argv.push("--config", JSON.stringify(overrides));
-    if (cmd.test) {
-        argv.push("-t", cmd.test);
-    }
+    argv = argv.concat(args);
 
     jest.run(argv);
 };

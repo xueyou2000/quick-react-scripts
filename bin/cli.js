@@ -14,7 +14,7 @@ program
     .command("init <project-directory>")
     .description(chalk.cyan("初始化项目"))
     .usage(`${chalk.green("<project-directory>")} [options]`)
-    .option("--registry", "使用镜像")
+    .option("--registry [value]", "使用镜像")
     .action(init);
 
 // build
