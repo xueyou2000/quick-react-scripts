@@ -4,7 +4,7 @@ const jest = require("jest");
 
 module.exports = async (cmd) => {
     const args = process.argv.slice(3);
-    let argv = process.argv.slice(2);
+    let argv = [];
     const jestConfig = {
         rootDir: PATHS.currentDirectory,
         setupFilesAfterEnv: [require.resolve("react-testing-library/cleanup-after-each")],
