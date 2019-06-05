@@ -171,9 +171,15 @@ yarn test
 使用`quick-react-scripts`的案例:
 
 -   [xy-affix](https://github.com/xueyou2000/xy-affix) 图钉组件, 将元素固定在屏幕视窗内
+-   [xy-alert](https://github.com/xueyou2000/xy-alert) 警告提示组件, 简单的样式组件
 -   [xy-autocomplete](https://github.com/xueyou2000/xy-autocomplete) 联想输入组件
+-   [xy-badge](https://github.com/xueyou2000/xy-badge) 徽章组件, 右上角显示徽章数
 -   [xy-button](https://github.com/xueyou2000/xy-button) 按钮组件
+-   [xy-card](https://github.com/xueyou2000/xy-card) 卡片组件, 简单的样式组件
 -   [xy-checkbox](https://github.com/xueyou2000/xy-checkbox) 复选框, 单选框组件
+-   [xy-css-transition](https://github.com/xueyou2000/xy-css-transition) css 过渡组件, 包裹需要过渡的元素, 在进入,离开时设置样式
+-   [xy-date-picker](https://github.com/xueyou2000/xy-date-picker) 日期选择器
+-   [xy-divider](https://github.com/xueyou2000/xy-divider) 分割线, 简单的样式组件
 -   [xy-drawer](https://github.com/xueyou2000/xy-drawer) 抽屉组件
 -   [xy-empty](https://github.com/xueyou2000/xy-empty) 空状态组件
 -   [xy-form](https://github.com/xueyou2000/xy-form) 表单组件
@@ -182,12 +188,23 @@ yarn test
 -   [xy-input](https://github.com/xueyou2000/xy-input) 输入框组件
 -   [xy-input-number](https://github.com/xueyou2000/xy-input-number) 数值输入框组件
 -   [xy-messagebox](https://github.com/xueyou2000/xy-messagebox) 消息弹框组件
+-   [xy-model](https://github.com/xueyou2000/xy-model) 模态对话框
 -   [xy-notification](https://github.com/xueyou2000/xy-notification) 通知组件, 右上角弹出通知
+-   [xy-page-transition](https://github.com/xueyou2000/xy-page-transition) 页面过渡组件,一般用于路由动画
+-   [xy-pagination](https://github.com/xueyou2000/xy-pagination) 分页器
+-   [xy-popover](https://github.com/xueyou2000/xy-popover) 气泡卡片组件
 -   [xy-select](https://github.com/xueyou2000/xy-select) 下拉列表组件
 -   [xy-skeleton](https://github.com/xueyou2000/xy-skeleton) 骨架屏组件
+-   [xy-spin](https://github.com/xueyou2000/xy-spin) 加载中组件
+-   [xy-steps](https://github.com/xueyou2000/xy-steps) 步骤条组件
 -   [xy-switch](https://github.com/xueyou2000/xy-switch) 开关组件
--   [xy-tabs](https://github.com/xueyou2000/xy-tabs) tabs 组件
--   [xy-tooltip](https://github.com/xueyou2000/xy-tooltip) tooltip 提示组件
+-   [xy-table](https://github.com/xueyou2000/xy-table) 表格
+-   [xy-tabs](https://github.com/xueyou2000/xy-tabs) 选项卡组件
+-   [xy-time-picker](https://github.com/xueyou2000/xy-time-picker) 时间选择器
+-   [xy-time-select](https://github.com/xueyou2000/xy-time-select) 时间下拉列表
+-   [xy-tooltip](https://github.com/xueyou2000/xy-tooltip) 提示组件
+-   [xy-trigger](https://github.com/xueyou2000/xy-trigger) 触发器组件, 包裹元素监听相应事件
+-   [xy-upload](https://github.com/xueyou2000/xy-upload) 上传组件
 
 ## License
 
