@@ -1,6 +1,6 @@
 {
     "name": "quick-react-scripts",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "用于快速创建React组件项目",
     "main": "bin/cli.js",
     "license": "MIT",
