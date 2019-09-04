@@ -7,7 +7,7 @@ module.exports = async (cmd) => {
     let argv = [];
     const jestConfig = {
         rootDir: PATHS.currentDirectory,
-        setupFilesAfterEnv: [require.resolve("@testing-library/react/cleanup-after-each")],
+        // setupFilesAfterEnv: [require.resolve("@testing-library/react/cleanup-after-each")],
         preset: "ts-jest",
         testMatch: ["<rootDir>/tests/**/*.(spec|test).ts?(x)"],
         moduleNameMapper: {
