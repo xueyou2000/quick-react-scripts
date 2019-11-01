@@ -3,7 +3,7 @@ const spawn = require("cross-spawn");
 function spawnAsync(command, args, options) {
     return new Promise((resolve, reject) => {
         const opt = options;
-        if (opt.env) {
+        if (opt && opt.env) {
             opt.env = Object.assign(process.env, opt.env);
         }
 
