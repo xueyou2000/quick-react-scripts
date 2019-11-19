@@ -20,7 +20,7 @@ async function buildAssets() {
     if (fs.existsSync(inputFile)) {
         const output = {
             file: "assets/_.js",
-            format: "es"
+            format: "es",
         };
 
         const overrides = Object.assign({}, output, require(path.resolve(PATHS.currentDirectory, "package.json")).rollup);
@@ -30,14 +30,13 @@ async function buildAssets() {
             input: inputFile,
             plugins: [
                 resolve({
-                    jsnext: true,
-                    extensions
+                    extensions,
                 }),
                 commonjs({
-                    include: path.resolve(PATHS.currentDirectory, "node_modules/**")
+                    include: path.resolve(PATHS.currentDirectory, "node_modules/**"),
                 }),
                 typescript({
-                    tsconfig: path.resolve(PATHS.currentDirectory, "tsconfig.json")
+                    tsconfig: path.resolve(PATHS.currentDirectory, "tsconfig.json"),
                 }),
                 // babel({
                 //     extensions,
@@ -46,10 +45,10 @@ async function buildAssets() {
                 scss({
                     output: path.resolve(PATHS.currentDirectory, "assets/index.css"),
                     outputStyle: "compressed",
-                    sourceMap: true
+                    sourceMap: true,
                 }),
-                progress({ clearLine: true })
-            ]
+                progress({ clearLine: true }),
+            ],
         });
 
         // write the bundle to disk
